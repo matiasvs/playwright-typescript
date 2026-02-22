@@ -1,0 +1,33 @@
+{
+  "name": "playwright-gherkin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:e2e": "cucumber-js",
+    "test:unit": "jest",
+    "test:playwright": "yarn playwright test && yarn playwright show-report",
+    "report": "allure serve allure-results",
+    "test:report": "yarn run test:e2e; yarn run report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.6.0",
+    "@cucumber/messages": "^32.0.1",
+    "@playwright/test": "^1.58.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.2.3",
+    "allure": "^3.0.0",
+    "allure-cucumberjs": "^3.4.5",
+    "allure-js-commons": "^3.4.5",
+    "jest": "^30.2.0",
+    "playwright": "^1.58.2",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

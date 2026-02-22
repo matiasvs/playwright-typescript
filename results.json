@@ -1,0 +1,290 @@
+{
+  "config": {
+    "configFile": "/home/blend3d/Pictures/playwright-typescript/playwright.config.ts",
+    "rootDir": "/home/blend3d/Pictures/playwright-typescript/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/blend3d/Pictures/playwright-typescript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/blend3d/Pictures/playwright-typescript/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "store.spec.ts",
+      "file": "store.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Petstore Store API Tests",
+          "file": "store.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /store/inventory should return 200",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 632,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:7:35",
+                        "location": {
+                          "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                          "column": 35,
+                          "line": 7
+                        },
+                        "snippet": "   5 |     test('GET /store/inventory should return 200', async ({ request }) => {\n   6 |         const response = await request.get('/store/inventory');\n>  7 |         expect(response.status()).toBe(200);\n     |                                   ^\n   8 |     });\n   9 |\n  10 |     test('POST /store/order should return 200', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                            "column": 35,
+                            "line": 7
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n   5 |     test('GET /store/inventory should return 200', async ({ request }) => {\n   6 |         const response = await request.get('/store/inventory');\n>  7 |         expect(response.status()).toBe(200);\n     |                                   ^\n   8 |     });\n   9 |\n  10 |     test('POST /store/order should return 200', async ({ request }) => {\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:7:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-22T22:55:58.624Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                        "column": 35,
+                        "line": 7
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "142cdf6a1adeb8604bd3-48c39502de0ded64a20c",
+              "file": "store.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "POST /store/order should return 200",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 644,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:21:35",
+                        "location": {
+                          "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                          "column": 35,
+                          "line": 21
+                        },
+                        "snippet": "  19 |             }\n  20 |         });\n> 21 |         expect(response.status()).toBe(200);\n     |                                   ^\n  22 |     });\n  23 |\n  24 |     test('GET /store/order/{orderId} should return 200 or 404', async ({ request }) => {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                            "column": 35,
+                            "line": 21
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m404\u001b[39m\n\n  19 |             }\n  20 |         });\n> 21 |         expect(response.status()).toBe(200);\n     |                                   ^\n  22 |     });\n  23 |\n  24 |     test('GET /store/order/{orderId} should return 200 or 404', async ({ request }) => {\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:21:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-22T22:55:59.853Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                        "column": 35,
+                        "line": 21
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "142cdf6a1adeb8604bd3-163c34b9c018fc743a3c",
+              "file": "store.spec.ts",
+              "line": 10,
+              "column": 9
+            },
+            {
+              "title": "GET /store/order/{orderId} should return 200 or 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 639,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-22T22:56:01.096Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "142cdf6a1adeb8604bd3-8e3d2b68850d1997edbf",
+              "file": "store.spec.ts",
+              "line": 24,
+              "column": 9
+            },
+            {
+              "title": "DELETE /store/order/{orderId} should return 200 or 404",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 161,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m405\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m405\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:35:28",
+                        "location": {
+                          "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                          "column": 28,
+                          "line": 35
+                        },
+                        "snippet": "  33 |         // Similarly, delete an order. It might be 404 if not found, 200 if successfully deleted.\n  34 |         const response = await request.delete('/store/order/1');\n> 35 |         expect([200, 404]).toContain(response.status());\n     |                            ^\n  36 |     });\n  37 |\n  38 | });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                            "column": 28,
+                            "line": 35
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m405\u001b[39m\nReceived array: \u001b[31m[200, 404]\u001b[39m\n\n  33 |         // Similarly, delete an order. It might be 404 if not found, 200 if successfully deleted.\n  34 |         const response = await request.delete('/store/order/1');\n> 35 |         expect([200, 404]).toContain(response.status());\n     |                            ^\n  36 |     });\n  37 |\n  38 | });\n    at /home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts:35:28"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-22T22:56:01.749Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/home/blend3d/Pictures/playwright-typescript/tests/store.spec.ts",
+                        "column": 28,
+                        "line": 35
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "142cdf6a1adeb8604bd3-ded7df4a956c0695829c",
+              "file": "store.spec.ts",
+              "line": 32,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-22T22:55:58.042Z",
+    "duration": 3890.857,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
