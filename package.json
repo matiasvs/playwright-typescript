@@ -8,6 +8,7 @@
     "test:e2e": "cucumber-js",
     "test:unit": "jest",
     "test:playwright": "yarn playwright test && yarn playwright show-report",
+    "test:api-USER": "yarn playwright test tests/user.spec.ts && yarn playwright show-report",
     "report": "allure serve allure-results",
     "test:report": "yarn run test:e2e; yarn run report"
   },
