@@ -20,7 +20,7 @@ test.describe('Petstore User API Tests', () => {
         const response = await request.post('user', {
             data: userData
         });
-        expect(response.status()).toBe(200);//test reporte online
+        expect(response.status()).toBe(200);//test reporte online v2
     });
 
     test('GET /user/login should return 200', async ({ request }) => {
